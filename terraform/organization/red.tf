@@ -105,7 +105,7 @@ module "endpoints" {
   source = "terraform-aws-modules/vpc/aws//modules/vpc-endpoints"
   # Exacta, no "~> 6.7": el lock de Terraform solo fija proveedores, no módulos, así que esta
   # línea es lo único que hace que la cátedra baje la misma versión contra la que probamos.
-  version = "6.7.3"
+  version = "6.7.4"
 
   vpc_id = aws_vpc.ateneo.id
   region = var.region
